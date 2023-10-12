@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <!-- Custom styles for this template -->
+    <link href="header.css" rel="stylesheet">
+    <link href="search.css" rel="stylesheet">
+     <!--Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Boostrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+    <!--Header-->
+    <header class="d-flex flex-wrap justify-content-center py-3 bg-dark">
+
+      <!--TIEI Name-->
+      <a href="index.html" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-white">
+        <span class="fs-2">TIEI.org</span>
+      </a>
+
+      <!--Outline of Person-->
+      <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </div>
+
+      <!--Dropdown Menu-->
+      <div class = "center" id = "parent">
+        <div class="col" id = "dro">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Welcome
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Start of navigation bar-->
+    <nav class="navbar">
+        <div class = "color">
+          <!--Home Logo-->
+          <svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+            <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </div>
+      
+    </nav>
+    <!--End of navigation bar-->
+  
+    <!--Main text of page-->
+    <main>
+
+      <!--First container for top of page-->
+      <div class = "container mb-5 pt-5"> 
+            <form>
+              <div class="row" id="mainsearch">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="All Subjects">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Authors/Experts">
+                </div>
+                <div class="col">         
+                  <input type="text" class="form-control" placeholder="Search for Articles">  
+                </div>
+                <div class="col"> 
+                  <a href ="display.html" class="btn btn-light" role="button">Go</a>        
+                </div>       
+              </div>
+            </form>
+
+      </div>
+      <!--Close Container-->
+
+      <!--Result Container-->
+      <div class="container">
+        <div class="row ng-scope">
+            <div class="col-md-9 col-md-pull-3">
+                <section class="search-result-item">
+                    <a class="image-link" href="#"><img class="image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+                    </a>
+                    <div class="search-result-item-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4 class="search-result-item-heading"><a href="#">john doe</a></h4>
+                                <p class="info">New York, NY 20188</p>
+                                <p class="description">Not just usual Metro. But something bigger. Not just usual widgets, but real widgets. Not just yet another admin template, but next generation admin template.</p>
+                            </div>
+                            <div class="col-sm-3 text-align-center">
+                                <p class="value3 mt-sm">$9, 700</p>
+                                <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="search-result-item">
+                    <a class="image-link" href="#"><img class="image" src="https://bootdey.com/img/Content/avatar/avatar6.png">
+                    </a>
+                    <div class="search-result-item-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4 class="search-result-item-heading"><a href="#">john doe</a></h4>
+                                <p class="info">Los Angeles, NY 20188</p>
+                                <p class="description">You will never know exactly how something will go until you try it. You can think three hundred times and still have no precise result.</p>
+                            </div>
+                            <div class="col-sm-3 text-align-center">
+                                <p class="value3 mt-sm">$10, 300</p>
+                                <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="search-result-item">
+                    <a class="image-link" href="#"><img class="image" src="https://bootdey.com/img/Content/avatar/avatar2.png">
+                    </a>
+                    <div class="search-result-item-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4 class="search-result-item-heading"><a href="#">john doe</a></h4>
+                                <p class="info">New York, NY 20188</p>
+                                <p class="description">The Great Prince of the Grand Duchy of Lithuania he had stopped the invasion to Europe of Timur (Tamerlan) from Asia heading a big Army of Belarusians, Lithuanians.</p>
+                            </div>
+                            <div class="col-sm-3 text-align-center">
+                                <p class="value3 mt-sm">$3, 200</p>
+                                <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-info btn-sm" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="search-result-item">
+                    <a class="image-link" href="#"><img class="image" src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                    </a>
+                    <div class="search-result-item-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h4 class="search-result-item-heading"><a href="#">john doe</a></h4>
+                                <p class="info">Minsk, NY 20188</p>
+                                <p class="description">Yes you can! Further more, you should! It let's you create really beautiful images either for elements or for the entire background.</p>
+                            </div>
+                            <div class="col-sm-3 text-align-center">
+                                <p class="value3 mt-sm">$2, 400</p>
+                                <p class="fs-mini text-muted">PER MONTH</p><a class="btn btn-info btn-sm" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+      </div>
+      <!--End Result Container-->
+    
+    </main>

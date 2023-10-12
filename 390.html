@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome!</title>
+    <title>Home</title>
 
     <!-- Custom styles for this template -->
     <link href="header.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 bg-dark">
 
       <!--TIEI Name-->
-      <a href="" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-white">
+      <a href="index.html" class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none text-white">
         <span class="fs-2">TIEI.org</span>
       </a>
 
@@ -40,7 +40,7 @@
             Welcome
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Login</a>
+            <a class="dropdown-item" href="login.html">Login</a>
             <a class="dropdown-item" href="#">Sign Up</a>
           </div>
         </div>
@@ -65,14 +65,22 @@
     <main>
       <!--First container for top of page-->
       <div class = "container mb-5 pt-5"> 
-            <!--Start Researcher section-->
-          <div class = "col">
-            <h2 class = "text-light text-center">Welcome to the TIEI Database!</h2>
-            <div class = "container" id = "white">
-              <h5 class = "lead">There is a lot of research and databases out there, but not that many ways to organize that research. Using machine learning to organize different topics into Biopsychosocial Ecological (BPSE) Framework, researchers and members of the community can more easily find research that fits their specifc topics!</h5>
-            </div>
-          </div>
-          <!--End of Researcher section-->
+            <form>
+              <div class="row" id="mainsearch">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="All Subjects">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Authors/Experts">
+                </div>
+                <div class="col">         
+                  <input type="text" class="form-control" placeholder="Search for Articles">  
+                </div>
+                <div class="col"> 
+                  <a href ="display.html" class="btn btn-light" role="button">Go</a>        
+                </div>       
+              </div>
+            </form>
 
       </div>
       <!--Close Container-->
@@ -83,34 +91,56 @@
 
           <!--Start Researcher section-->
           <div class = "col">
-            <h2 class = "text-light text-center">BPSE Sorts By:</h2>
+            <h2 class = "text-light text-center">Researcher Profiles</h2>
             <div class = "container" id = "white">
-              <h5 class = "lead"><u>Domain</u></h5>
+              <h5 class = "lead"><u>Search Experts</u></h5>
               <p></p>
-              <h5 class = "lead"><u>Scope</u></h5>
+              <h5 class = "lead"><u>Data</u></h5>
               <p></p>
-              <h5 class = "lead"><u>...</u></h5>
-
-              <a class="btn btn-primary" href="390.html" role="button">Conitnue to site &raquo;</a>
+              <h5 class = "lead"><u>Technical Resources</u></h5>
+              <p></p>
+              <a href = "https://www.zotero.org/groups/5185450/climate_climate_literature_index_for_multidisciplinary_author_teams_-_training_database/library">
+                <h5 class = "lead"><u>Literature</u></h5>
+              </a>
             </div>
           </div>
           <!--End of Researcher section-->
 
-          <!--Image-->
+          <!--Start Policy section-->
           <div class = "col">
-            <h2 class = "text-light text-center">BPSE Image:</h2>
+            <h2 class = "text-light text-center">Policy</h2>
             <div class = "container" id = "white">
-                <img src="bpse.png" class="img-fluid" alt="Responsive image">
+              <h5 class = "lead"><u>Experts</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Law & Policy</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Programs</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Funding Resources</u></h5>
             </div>
           </div>
-            
+          <!--End of Policy section-->
+
+          <!--Start Community section-->
+          <div class = "col">
+            <h2 class = "text-light text-center">Community</h2>
+            <div class = "container" id = "white">
+              <h5 class = "lead"><u>Leaders & Citizen Experts</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Practioners</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Needs</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Resources</u></h5>
+              <p></p>
+              <h5 class = "lead"><u>Outcome Assesment</u></h5>
+            </div>
+          </div>
+          <!--End of Researcher section-->
+
         </div> <!--Close Row-->
-
       </div> <!--Close Container-->
-
-
-
-
+    
     </main>
   </body>
 
